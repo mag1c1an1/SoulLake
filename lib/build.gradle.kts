@@ -15,10 +15,14 @@ plugins {
 
 repositories {
     // Use Maven Central for resolving dependencies.
-    mavenCentral()
+//    mavenCentral()
+    maven(
+        "https://maven.aliyun.com/repository/public" // 阿里云 Maven 镜像
+    )
 }
 
 dependencies {
+    // api implementation testImplementation runtimeOnly compileOnly api
     // Use Scala 2.13 in our library project
     implementation(libs.scala.library)
 
