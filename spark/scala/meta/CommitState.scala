@@ -1,5 +1,5 @@
-object CommitState extens Enumeratrion {
-  
+object CommitState extends Enumeratrion {
+
 }
 
 

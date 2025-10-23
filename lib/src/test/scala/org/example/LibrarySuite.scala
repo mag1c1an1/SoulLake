@@ -11,6 +11,7 @@ import org.scalatestplus.junit.JUnitRunner
 class LibrarySuite extends AnyFunSuite {
   test("someLibraryMethod is always true") {
     def library = new Library()
+    println("???????????")
     assert(library.someLibraryMethod())
   }
 }

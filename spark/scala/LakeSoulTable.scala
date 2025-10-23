@@ -1,4 +1,3 @@
-class LakeSoulTable(df: => Dataset[Row],snapshotManagement: SnapshotManagement)
-  extends LakeSoulTableOperations with Logging {
-
-}
+class LakeSoulTable(df: => Dataset[Row], snapshotManagement: SnapshotManagement)
+    extends LakeSoulTableOperations
+    with Logging {}
