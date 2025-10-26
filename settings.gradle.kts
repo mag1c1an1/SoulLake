@@ -11,4 +11,6 @@ plugins {
 }
 
 rootProject.name = "SoulLake"
-include("lib")
+include("soullake-spark")
+
+include("soullake-common")
