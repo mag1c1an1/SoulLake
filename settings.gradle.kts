@@ -10,7 +10,9 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.10.0"
 }
 
-rootProject.name = "SoulLake"
-include("soullake-spark")
+rootProject.name = "AshLake"
 
-include("soullake-common")
+include("ashlake-common")
+include("ashlake-spark")
+include("ashlake-flink")
+include("ashlake-io-java")

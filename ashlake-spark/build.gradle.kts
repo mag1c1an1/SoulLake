@@ -13,14 +13,6 @@ plugins {
     `java-library`
 }
 
-repositories {
-    // Use Maven Central for resolving dependencies.
-//    mavenCentral()
-    maven(
-        "https://maven.aliyun.com/repository/public" // 阿里云 Maven 镜像
-    )
-}
-
 dependencies {
     // api implementation testImplementation runtimeOnly compileOnly api
     // Use Scala 2.13 in our library project
@@ -51,9 +43,9 @@ java {
 }
 
 tasks.test {
-  useJUnit()                  // 你用的是 JUnitRunner
-  testLogging {
-    showStandardStreams = true
-    events("passed", "failed", "skipped")
-  }
+    useJUnit()                  // 你用的是 JUnitRunner
+    testLogging {
+        showStandardStreams = true
+        events("passed", "failed", "skipped")
+    }
 }

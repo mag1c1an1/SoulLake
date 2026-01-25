@@ -6,3 +6,8 @@
 
 .metals
 .bloop
+
+**/.project
+**/.settings
+**/target
+
