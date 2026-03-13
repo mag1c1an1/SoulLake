@@ -14,6 +14,8 @@ dependencies {
     compileOnly("org.apache.flink:flink-streaming-java:${flinkVersion}")
     compileOnly("org.apache.flink:flink-table-common:${flinkVersion}")//    compileOnly("org.apache.flink:flink-table-common:${flinkVersion}")
 
+    implementation(project(":ashlake-io-java"))
+
     // arrow
     // 核心：内存管理和向量结构 (必选)
     implementation("org.apache.arrow:arrow-vector:${arrowJavaVersion}")
